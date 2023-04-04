@@ -49,6 +49,7 @@ Window {
                 DefaultMaterial {
                     lighting: DefaultMaterial.NoLighting
                     pointSize: _sliderSize.value * Screen.devicePixelRatio
+                    vertexColorsEnabled: true
                 }
             ]
         }

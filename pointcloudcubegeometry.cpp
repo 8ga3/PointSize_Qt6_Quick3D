@@ -42,10 +42,10 @@ void PointCloudCubeGeometry::updateData()
 
     addAttribute(QQuick3DGeometry::Attribute::PositionSemantic,
                  0,
-                 QQuick3DGeometry::Attribute::F32Type);
+                 QQuick3DGeometry::Attribute::ComponentType::F32Type);
     addAttribute(QQuick3DGeometry::Attribute::ColorSemantic,
                  3 * sizeof(float),
-                 QQuick3DGeometry::Attribute::F32Type);
+                 QQuick3DGeometry::Attribute::ComponentType::F32Type);
 }
 
 float PointCloudCubeGeometry::randomFloat(const float lowest, const float highest)
