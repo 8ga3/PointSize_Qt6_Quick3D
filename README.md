@@ -16,4 +16,4 @@ Qt 6のQt Quick 3Dを使って、ポイントサイズを変更するサンプ�
 
 * Qt Creator
 * CMake
-* Qt 6.4.3
+* Qt 6.6.0
