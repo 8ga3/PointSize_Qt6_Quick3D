@@ -28,7 +28,10 @@ Window {
             id: cameraOrthographic
             clipNear: 0.1
             position: Qt.vector3d(0, 0, 300)
-            scale: Qt.vector3d(0.5, 0.5, 0.5)
+            horizontalMagnification: scale_size // Immediately after instance creation, operation is unstable. (Qt 6.6.0)
+            verticalMagnification: scale_size   // Immediately after instance creation, operation is unstable. (Qt 6.6.0)
+
+            property real scale_size: Math.min(mainView3d.width, mainView3d.height) / (cube.scale.x * 10 * Math.SQRT2)
         }
 
         WasdController {
